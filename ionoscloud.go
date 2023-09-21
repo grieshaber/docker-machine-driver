@@ -1017,7 +1017,6 @@ func (d *Driver) GetIP() (string, error) {
 	if d.IPAddress == "" {
 		return "", fmt.Errorf("IP address is not set")
 	}
-	log.Infof("Using IP %s to connect", d.IPAddress)
 	return d.IPAddress, nil
 }
 
